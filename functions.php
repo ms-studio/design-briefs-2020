@@ -3,12 +3,17 @@
 
 function designbriefs_load_style() {
 		if ( ! is_admin() ) {
-		
-			// wp_register_style( 'davis_fonts', '//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' );
-		
+				
 			wp_enqueue_style( 
 					'parent-style', 
 					get_template_directory_uri() . '/style.css', // main.css
+					false, // dependencies
+					'1.1' // version
+			);
+			
+			wp_enqueue_style( 
+					'override', 
+					get_stylesheet_directory_uri() . '/style-inline.css', // main.css
 					false, // dependencies
 					'1.1' // version
 			);

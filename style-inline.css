@@ -1,0 +1,56 @@
+/*
+ Main Accent Color
+*/
+
+.color-accent, .color-accent-hover:hover, .color-accent-hover:focus, :root .has-accent-color, .has-drop-cap:not(:focus):first-letter, .wp-block-button.is-style-outline, a {
+	color: #25881a;
+	color: #09BE84 !important;
+}
+
+blockquote, .border-color-accent, .border-color-accent-hover:hover, .border-color-accent-hover:focus {
+	border-color: #09BE84 !important;
+}
+
+/*
+ * Links in header and footer
+*/
+.header-footer-group .color-accent,
+.header-footer-group a,
+.site-description,
+.singular .entry-header .post-meta,
+body:not(.overlay-header) .toggle-inner .toggle-text {
+	color: #fff !important;
+}
+
+
+/* Header And Footer Background */
+#site-header, 
+.footer-nav-widgets-wrapper, 
+#site-footer, 
+.menu-modal, .menu-modal-inner, 
+.search-modal-inner, .archive-header, .singular .entry-header, .singular .featured-media:before, .wp-block-pullquote:before {
+	background-color: #d0ffbf;
+	background-color: #09BE84 !important;
+}
+
+/* Header And Footer Links */
+
+.header-footer-group, 
+body:not(.overlay-header) #site-header .toggle, 
+.menu-modal .toggle,
+.header-footer-group .svg-icon path,
+#site-footer a,
+.powered-by-wordpress,
+.archive-title,
+.entry-header .entry-title {
+	color: #fff !important;
+}
+
+
+.header-footer-group table caption, body:not(.overlay-header) .header-inner .toggle-wrapper::before {
+	background-color: #fff !important;
+}
+
+.header-footer-group pre, .header-footer-group fieldset, .header-footer-group input, .header-footer-group textarea, .header-footer-group table, .header-footer-group table *, .footer-nav-widgets-wrapper, #site-footer, .menu-modal nav *, .footer-widgets-outer-wrapper, .footer-top {
+	border-color: #fff !important;
+}
