@@ -1,0 +1,319 @@
+/*
+Theme Name: Design Briefs 2020
+Theme URI: https://github.com/ms-studio/design-briefs-2020
+GitHub Theme URI: https://github.com/ms-studio/design-briefs-2020
+Author: Manuel Schmalstieg
+Author URI: 
+Template: twentytwenty
+Description: New theme for the Design Briefs website.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: designbriefs
+
+*/
+
+
+
+body * {
+    font-family: 'glacial-indifference-webfont', Futura, sans-serif;  
+}
+
+.frm_style_formidable-style.with_frm_style label.frm_primary_label, 
+.frm_style_formidable-style.with_frm_style.frm_login_form label,
+.frm_style_formidable-style.with_frm_style .frm_submit button {
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'glacial-indifference-webfont', Futura, sans-serif;
+	font-size: 1em;
+}
+
+.frm_style_formidable-style.with_frm_style .frm_submit button {
+	font-size: 1.2em;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.post p {
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+}
+
+/* @end */
+
+/* @group Colors */
+
+html, body {
+	background: #09BE84;
+}
+
+.container {
+	background: #feffeb;
+}
+
+.site-header,
+.site-header a,
+.site-header button,
+.site-footer,
+.site-footer a {
+	color: #fff;
+}
+
+.content a:hover {
+	border-color: #09BE84;
+	color: #09BE84;
+}
+
+.meta a, .meta a:hover {
+  color: #09BE84;
+}
+
+
+/* @end */
+
+/* @group Layout */
+
+/* original header styling */
+
+header {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.site-header,
+.site-footer {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
+.site-header {
+	margin-bottom: 0;
+}
+
+.page-header h1 {
+	margin-bottom: 1em;
+}
+
+
+header .site-title {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-top: 0;
+	text-transform: lowercase;
+}
+
+.wrapper {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.post .wrapper {
+	/*padding-top: 0;*/
+}
+
+.title-wrapper {
+	padding-bottom: 0;
+}
+
+/* @group Footer */
+
+.site-footer {
+	margin-bottom: 0;
+	padding-bottom: 2em;
+}
+
+footer p + p {
+    font-style: normal;
+}
+
+footer p a {
+    text-decoration: underline;
+}
+
+/* @end */
+
+/* @group Content */
+
+/* 
+ * Note: 
+ * The .meta-content block includes both .metadata and .content blocks 
+ *
+*/
+
+.meta-content,
+.child-post {
+	border-left: 1em solid #09BE84;
+	padding-left: 1.2em;
+}
+
+.child-post {
+	margin-bottom: 2em;
+	border-left-width: 2em;
+}
+
+@media (min-width: 621px) {
+	.meta-content { 
+		border-left-width: 2em;
+	}
+	.child-post { 
+		border-left-width: 4em;
+	}
+}
+
+.title,
+.post .meta p {
+	text-align: left;
+}
+
+.meta {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	color: inherit;
+}
+
+.meta p,
+.meta p:first-child + p {
+	margin: 0;
+}
+
+.post .date {
+	text-transform: lowercase;
+}
+
+.post .description,
+.child-post h2 {
+	font-size: 1.5em;
+	font-weight: 400;
+	margin-bottom: 0.5em;
+/*	text-transform: lowercase;*/
+}
+
+@media (min-width: 621px) {
+	
+	header .site-title,
+	.site-name,
+	.menu,
+	footer p 
+	{
+		text-align: left;
+	}
+	
+	.page-header h1,
+	.post h1 {
+		font-size: 2em;
+	}
+	
+	.archive .post h1 {
+		font-size: 1.5em;
+	}
+}
+
+
+/* @group Gallery */
+
+.gallery .gallery-item {
+	margin: 5px 5px 0 0 !important;
+	width: 30% !important;
+}
+
+.gallery-icon {
+	background-color: #09BE84;
+}
+
+.gallery img {
+	border: 0px !important;
+	opacity: 0.7;
+	filter: 
+		sepia(100%) 
+		hue-rotate(100deg) 
+		brightness(0.9) 
+		saturate(1.5)
+		;
+	transition: filter 0.2s ease-in;
+}
+
+.gallery img:hover {
+	opacity: 1;
+	filter: 
+		sepia(20%) 
+		hue-rotate(0deg) 
+		brightness(0.9) 
+		saturate(1)
+		;
+}
+
+/* @end Gallery */
+
+/* @end Content */
+
+
+.post-tags a {
+	font-size: 1.6em;
+	line-height: 1.6;
+}
+
+.home .post,
+.archive .post {
+	/* margin-bottom: 3em; */
+}
+
+.child-posts-header {
+	background: #09BE84;
+	color: #fff;
+}
+
+.child-posts-header h1 {
+	padding: 1em 0em;
+}
+
+/* @group Overrides */
+
+.post:before,
+.comments:before,
+.comment-respond:before,
+.comments .comment-respond:after,
+.pagination:before,
+footer:before {
+  background: none;
+  background-size: 0;
+	content: "";
+	display: none;
+	height: 0;
+	margin: 0;
+}
+
+.comment-respond {
+	margin-top: 2em;
+}
+
+/* @end */
+
+/* @group Featherlight */
+
+.featherlight .featherlight-content .caption  {
+	padding-top: 0.5em;
+}
+
+/* @end */
+
+/* @group Formidable */
+
+.frm_style_formidable-style.with_frm_style .frm_message p {
+    font-size: 1.125rem;
+    margin-top: 0;
+}
+
+.frm_style_formidable-style.with_frm_style p.description, .frm_style_formidable-style.with_frm_style div.description, .frm_style_formidable-style.with_frm_style div.frm_description, .frm_style_formidable-style.with_frm_style .frm-show-form > div.frm_description, .frm_style_formidable-style.with_frm_style .frm_error {
+	font-size: 1rem;
+	font-family: 'glacial-indifference-webfont', Futura, sans-serif;
+}
+
+.frm_style_formidable-style.with_frm_style div.frm_description {
+	margin-top: 0.5em;
+}
+
+/* @end */
