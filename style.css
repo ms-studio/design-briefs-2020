@@ -42,3 +42,9 @@ blockquote p {
 .child-posts > .section-inner {
 	background: #fff;
 }
+
+/* Make Tags more visible */
+.post-tags .meta-text {
+	font-weight: bold;
+	font-size: 1.3em;
+}
