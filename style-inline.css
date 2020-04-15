@@ -54,3 +54,14 @@ body:not(.overlay-header) #site-header .toggle,
 .header-footer-group pre, .header-footer-group fieldset, .header-footer-group input, .header-footer-group textarea, .header-footer-group table, .header-footer-group table *, .footer-nav-widgets-wrapper, #site-footer, .menu-modal nav *, .footer-widgets-outer-wrapper, .footer-top {
 	border-color: #fff !important;
 }
+
+/* Buttons */
+
+.infinite-scroll #site-content #infinite-handle span button {
+	background: #09BE84 !important;
+}
+
+/* Main Navigation */
+body:not(.overlay-header) .primary-menu > li > .icon {
+	color: #fff !important;
+}
