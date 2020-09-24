@@ -6,7 +6,7 @@ Author: Manuel Schmalstieg
 Author URI: 
 Template: twentytwenty
 Description: New theme for the Design Briefs website.
-Version: 1.0
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: designbriefs
@@ -15,7 +15,14 @@ Text Domain: designbriefs
 
 
 body,
+.child-posts,
 .entry-content,
+.entry-content h1, 
+.entry-content h2, 
+.entry-content h3, 
+.entry-content h4, 
+.entry-content h5, 
+.entry-content h6, 
 .entry-content p, 
 .entry-content ol, 
 .entry-content ul, 
@@ -32,11 +39,16 @@ blockquote p {
 	font-weight: bold;
 }
 
+/* Child-Posts */
 
 .child-posts {
 	background: #09BE84;
 	padding-top: 1rem;
 	margin-top: 5rem;
+}
+
+.child-posts  h1 {
+	padding: .3em;
 }
 
 .child-posts > .section-inner {
@@ -48,3 +60,5 @@ blockquote p {
 	font-weight: bold;
 	font-size: 1.3em;
 }
+
+/* Featherlign Overrides are in Designbriefs Functions Plugin */
